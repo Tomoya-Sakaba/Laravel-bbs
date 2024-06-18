@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <h1><a href="/post">Laravel News</a></h1>
+        <h1><a href="/">Laravel News</a></h1>
     </header>
     <div class="news">
         <h2>{{ $post->title }}</h2>

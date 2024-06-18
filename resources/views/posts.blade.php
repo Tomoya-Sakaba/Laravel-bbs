@@ -19,7 +19,7 @@
 <body>
     <header>
         <!-- ナビゲーションバーにホームに戻るリンクを貼る -->
-        <h1><a href="/post">Laravel News</a></h1>
+        <h1><a href="/">Laravel News</a></h1>
     </header>
     <h2>さあ、最新のニュースをシェアしましょう</h2>
     <div class="errors">
