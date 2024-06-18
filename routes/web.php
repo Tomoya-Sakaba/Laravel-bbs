@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CommentsController;
+use App\Http\Controllers\PostsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('posts');
+// });
+
+Route::get('/', 'PostsController@index')->name('post');
+
+Route::get('post/{id}', 'PostsController@show')->name('post.show');
+Route::post('post/store', 'PostsController@store')->name('post.store');
+
+Route::post('psot/{id}/comment/store', 'CommentsController@store')->name('comment.store');
